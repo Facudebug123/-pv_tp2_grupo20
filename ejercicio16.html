@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sumar Rango</title>
+</head>
+<body>
+  <script>
+    const sumarRango = (inicio, fin) => {
+      if (inicio > fin) {
+        alert("El número inicial debe ser menor o igual que el número final.");
+        return;
+      }
+
+      let suma = 0;
+      for (let i = inicio; i <= fin; i++) {
+        suma += i;
+      }
+
+      alert(`La suma de los números del ${inicio} al ${fin} es: ${suma}`);
+    };
+
+    const inicio = parseInt(prompt("Introduce el número de inicio:"));
+    const fin = parseInt(prompt("Introduce el número final:"));
+
+    if (!isNaN(inicio) && !isNaN(fin)) {
+      sumarRango(inicio, fin);
+    } else {
+      alert("Por favor, introduce números válidos.");
+    }
+  </script>
+</body>
+</html>
