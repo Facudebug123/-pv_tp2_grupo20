@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Radio dinámico</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .radio-group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+      }
+
+      input[type="radio"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #999;
+        border-radius: 50%;
+        outline: none;
+        transition: 0.3s ease-in-out;
+        position: relative;
+      }
+
+      input[type="radio"]:checked {
+        border-color: #4caf50;
+        background-color: #4caf50;
+        box-shadow: 0 0 0 4px rgba(76, 175, 80, 0.3);
+      }
+
+      #seleccionado {
+        font-size: 18px;
+        color: #333;
+        min-height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lenguaje favorito</h1>
+
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="lenguaje" value="JavaScript" />
+          JavaScript
+        </label>
+        <label>
+          <input type="radio" name="lenguaje" value="Python" />
+          Python
+        </label>
+        <label>
+          <input type="radio" name="lenguaje" value="C#" />
+          C#
+        </label>
+      </div>
+
+      <p id="seleccionado"></p>
+    </div>
+    <script src="js/ejercicio23.js"></script>
+  </body>
+</html>

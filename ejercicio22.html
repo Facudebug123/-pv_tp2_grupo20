@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Texto con cambio de fondo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 2px solid #ddd;
+        border-radius: 6px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      #resultado {
+        font-size: 18px;
+        color: #333;
+        min-height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Texto dinámico</h1>
+      <input type="text" id="texto" placeholder="Escribe algo largo..." />
+      <p id="resultado"></p>
+    </div>
+    <script src="js/ejercicio22.js"></script>
+  </body>
+</html>
