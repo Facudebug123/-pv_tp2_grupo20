@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contar letra A</title>
+</head>
+<body>
+  <script>
+    const contarLetraA = (texto) => {
+      let contador = 0;
+      for (let letra of texto.toLowerCase()) {
+        if (letra === 'a') {
+          contador++;
+        }
+      }
+      alert(`El texto "${texto}" contiene ${contador} letra(s) "a".`);
+    };
+
+    const texto = prompt("Introduce un texto:");
+
+    if (texto) {
+      contarLetraA(texto);
+    } else {
+      alert("No ingresaste ningún texto.");
+    }
+  </script>
+</body>
+</html>
