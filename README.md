@@ -5,3 +5,4 @@ Desarrollo TP2
 INTEGRANTES
 
 1-Churquina Facundo Francisco - usuario:Facudebug123
+2-Tejerina, Fernando Javier - usuario: fertejj
