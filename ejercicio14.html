@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+  <title>Ejercicio 14</title>
+  <script>
+    function duplicar(arreglo) {
+      let nuevoArreglo = [];
+      for (let i = 0; i < arreglo.length; i++) {
+        nuevoArreglo.push(arreglo[i] * 2);
+      }
+      return nuevoArreglo;
+    }
+
+    let numeros = [2, 4, 6, 8];
+
+    let duplicados = duplicar(numeros);
+
+    alert("Arreglo original: " + numeros.join(", "));
+    alert("Arreglo duplicado: " + duplicados.join(", "));
+  </script>
+</head>
