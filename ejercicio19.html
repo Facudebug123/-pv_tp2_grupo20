@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Alumno</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .formulario {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid #ccc;
+        }
+
+        .formulario h2 {
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .formulario label {
+
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .formulario input {
+            width: 95%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .formulario button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .formulario button:hover {
+            background-color: #0056b3;
+        }
+
+        .formulario div {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="formulario">
+        <h2>Datos del Alumno</h2>
+
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Tu nombre">
+        </div>
+
+        <div>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" placeholder="Tu apellido">
+        </div>
+
+        <div>
+            <label for="libreta">Libreta Universitaria:</label>
+            <input type="text" id="libreta" placeholder="Ej: 123456">
+        </div>
+
+        <button onclick="mostrarDatos()">Enviar</button>
+    </div>
+
+    <script src="js/ejercicio19.js"></script>
+
+
+</body>
+
+</html>
