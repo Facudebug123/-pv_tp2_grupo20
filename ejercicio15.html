@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio15</title>
+    <script type="module">
+      let n = prompt("Ingrese numero de mes");
+      const retornarMes = (numero) => {
+        let mes;
+        const meses = [
+          "Enero",
+          "Febrero",
+          "Marzo",
+          "Abril",
+          "Mayo",
+          "Junio",
+          "Julio",
+          "Agosto",
+          "Septiembre",
+          "Octubre",
+          "Noviembre",
+          "Diciembre",
+        ];
+
+        if (numero >= 1 && numero <= 12) {
+          mes = meses[numero - 1];
+        } else {
+          mes = "No es un mes válido";
+        }
+        return mes;
+      };
+
+      alert(`Mes: ${retornarMes(n)}`);
+    </script>
+  </head>
+  <body></body>
+</html>
